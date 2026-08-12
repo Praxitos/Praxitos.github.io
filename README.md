@@ -1,792 +1,381 @@
-# Dopefolio 🔥
+# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
-## A Blazing Fast Multipage Portfolio Template for Developers 🚀
+## A clean, beautiful and responsive portfolio template for Developers!
 
-## [Demo Link](https://dopefolio.netlify.app) 🔗
 
-<div align="center">
-  <img src="https://i.postimg.cc/CxZXqhWM/ezgif-com-video-to-gif-1.gif" alt="Dopefolio Demo" width="100%" />
-  <br>
-</div>
+<p align="center">
+  <kbd>
+<img src="https://user-images.githubusercontent.com/53429438/106779355-e9cd9e80-666c-11eb-9417-8a4b54441bc6.gif"></img>
+  </kbd>
+</p>
 
-<br/>
-<br/>
 
----
+Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
 
-<br/>
+If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
 
-## ( Update ): Project Achievement 🏆 
+Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
-**Dopefolio** has been listed as the **Hottest Frontend Tool of 2021** According to **CSS Tricks** 🥳. Thanks to all of you for supporting this project 🙌
+## Table of Contents
+- [Sections](#sections)
+- [Getting Started](#getting-started)
+- [How to Use](#how-to-use)
+- [Linking portfolio to GitHub](#linking-portfolio-to-github)
+- [Linking blogs section to Medium](#linking-blogs-section-to-medium)
+- [Change and Customize](#change-and-customize-every-section-according-to-your-need)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies-used)
+- [Illustrations](#illustrations)
+- [For the Future](#for-the-future)
+- [Contributors](#project-maintainers)
 
-**[Link to the CSS tricks article on Dopefolio](https://css-tricks.com/hottest-front-end-tools-in-2021/#aa-58-dopefolio)**   
+## Portfolio Sections
+✔️ Summary and About me\
+✔️ Skills\
+✔️ Education\
+✔️ Work Experience\
+✔️ Open Source Projects Connected with GitHub\
+✔️ Big Projects\
+✔️ Achievements And Certifications 🏆\
+✔️ Blogs\
+✔️ Talks\
+✔️ Podcast\
+✔️ Contact me\
+✔️ Twitter Timeline\
+✔️ GitHub Profile
 
-<br/>
+To view a live example, **[click here](https://developerfolio.js.org/)**.
 
-----
 
-<br/>
+## Getting Started
 
-## Features
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-- ### **Easy to Setup 💯** 
-- ### **Free to Use ( OpenSource ) 🥳** 
-- ### **No Additional Frameworks 🤘** 
-- ### **No Additional Libraries 🙌** 
-- ### **Multi Page 💎** 
-- ### **Fully Responsive 🚀** 
-- ### **Super Fast and Optimized for SEO ⚡** 
-- ### **Great Audits Score 🎖️** 
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer or use [Docker](https://www.docker.com/products/docker-desktop).
 
-<img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
+```
+node@v10.16.0 or higher
+npm@6.9.0 or higher
+git@2.17.1 or higher
+```
+### Docker Commands
 
-<br/>
-<br/>
+```
+1) BUILD IMAGE : docker build -t developerfolio:latest .
+2) RUN IMAGE: docker run -t -p 3000:3000 developerfolio:latest
+```
 
-## Test the template with different colors on the playground link 🚀
 
-## [Playground Link](https://dopefolio-playground.netlify.app) 🔗
+## How To Use 
 
-<div align="center">
-  <img src="https://i.postimg.cc/xjsqN9GG/ezgif-com-gif-maker-2.gif" alt="Dopefolio Playground" width="100%" />
-  <br>
-</div>
-
-<br/>
-
-----
-
-<br/>
-
-## Technologies used 🛠️
-
-- **HTML** 🚀
-- **CSS** 🚀
-- **JavaScript** 🚀
-- **SASS** 🚀
-
----
-
-<br/>
-
-## How To Use 🔧
-
-From your command line, first clone Dopefolio:
+From your command line, clone and run developerFolio:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/rammcodes/dopefolio
+git clone https://github.com/saadpasta/developerFolio.git
 
 # Go into the repository
-$ cd dopefolio
+cd developerFolio
 
-# Remove current origin repository
-$ git remote remove origin
-```
+# Setup default environment variables
 
-<br/>
+# For Linux
+cp env.example .env
+# For Windows
+copy env.example .env
 
-Then you can install the dependencies
-
-Using NPM:
-
-```bash
 # Install dependencies
-$ npm install
+npm install
 
-# Listen to changes in CSS Preprocessor files ( SASS files )
-$ npm run compile:scss
+# Start a local dev server
+npm start
 ```
 
-Once you run `npm run compile:scss`, then open the `index.html` inside your favorite browser or using the live server extension.
+## Linking Portfolio to GitHub
 
-<br>
+Generate a classic GitHub personal access token following these [instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) (make sure you don't select any scope just generate a simple token). If you are using [GitHub Actions](#configuring-github-actions-recommended) to deploy your portfolio you can skip this section.
 
----
+1. Create a file called .env in the root directory of your project (if not done already in section: [How To Use](#how-to-use))
 
-<br>
-
-## Template Instructions:
-
-## Step 1 - STYLES
-
-Make sure you have started the SASS to CSS compilation by running
+Note: Configuring environment variables before deploying your portfolio is highly recommended as some components depend on API data. 
 
 ```bash
-$ npm run compile:scss
+- DeveloperFolio
+  - node_modules
+  - public
+  - src
+  - .env         <-- create it here
+  - env.example  <-- this is the base file
+  - .gitignore
+  - package-lock.json
+  - package.json
 ```
 
-Change the color theme of the website.
+2. Inside the .env file, add key `REACT_APP_GITHUB_TOKEN` and assign your GitHub token like this, also add your username as `GITHUB_USERNAME`
 
-Go to `sass/abstracts/_variables.scss` and change the value of this sass variable called `$themeClrPrimary` to your preferred HEX color.
-
-```scss
-// Default value
-$themeClrPrimary: #0062b9;
+```env
+// .env
+REACT_APP_GITHUB_TOKEN = "YOUR GITHUB TOKEN HERE"
+GITHUB_USERNAME = "YOUR GITHUB USERNAME"
+USE_GITHUB_DATA = "true"
 ```
 
-**NOTE**: I highly recommend to checkout the [Dopefolio Playground Link](https://dopefolio-playground.netlify.app) to test the template with different colors and see which color do you like the most.
+Set `showGithubProfile` to true or false to show Contact Profile using GitHub, defaults to false.
 
-<br/>
+**Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
+
+Note: Open Source Projects section only show pinned items of your GitHub.
+If you are seeing something as shown below, follow these [instructions](https://docs.github.com/en/enterprise/2.13/user/articles/pinning-items-to-your-profile).
+
+![ERROR](https://i.imgur.com/Hj6mu1K.png)
+
+If the above solution still doesn't work, visit the [wiki page](https://github.com/saadpasta/developerFolio/wiki/Github-Setup-For-Open-Source-Projects).
+
+## Linking blogs section to Medium
+
+Optionally, you can link the blogs section to your medium user account:
+
+* Inside the .env file, add key `MEDIUM_USERNAME` and assign your Medium username
+
+```env
+// .env
+MEDIUM_USERNAME = "YOUR MEDIUM USERNAME"
+```
+
+* For Github Action, change the environment variable `MEDIUM_USERNAME` in `.github/workflows/deploy.yml`
+
+Set `displayMediumBlogs` to true or false in portofolio.js to display fetched Medium blogs, defaults to true.
+
+## Change and customize every section according to your need.
+
+#### Personalize page content in `/src/portfolio.js` & modify it as per your need. You will also need to modify `index.html` to change the title and metadata to provide accurate SEO for your personal portfolio.
+
+```javascript
+/* Change this file to get your Personal Porfolio */
+
+const greeting = {
+  /* Your Summary And Greeting Section */
+  title: "Hi all I'm Saad",
+  subTitle: emoji("A passionate Full Stack Software Developer 🚀"),
+  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+};
+
+const socialMediaLinks = {
+  /* Your Social Media Link */
+  github: "https://github.com/saadpasta",
+  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  gmail: "saadpasta70@gmail.com",
+  gitlab: "https://gitlab.com/saadpasta",
+  facebook: "https://www.facebook.com/saad.pasta7"
+};
+
+
+const skillsSection = { .... }
+
+const techStack = { .... }
+
+const workExperience = { .... }
+
+const openSource = { .... }
+
+const bigProjects = { .... }
+
+const achievementSection = { .... }
+
+const blogSection = { .... }
+
+const contactInfo = { .... }
+
+const twitterDetails = { ... }
+
+```
+#### Resume upload
+To upload your own resume, simply upload a pdf to `src/containers/greeting/resume` and rename the pdf to `resume.pdf`. 
+
+#### Using Emojis
+
+For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` function and pass the text you need as an argument. This would help in keeping emojis compatible across different browsers and platforms.
+
+#### Customize Lottie Animations
+
+You can choose a Lottie and download it in json format from sites like [this](https://lottiefiles.com/). In `src/assets/lottie`, replace the Lottie json file you want to alter with the same file name. If you want to change the Lottie options, go to `src/components/displayLottie/DisplayLottie.js` and change the `defaultOptions` object, you can refer [lottie-react docs](https://www.npmjs.com/package/lottie-react) for more info on the `defaultOptions` object.
+
+#### Adding Twitter Time line to your Page
+Insert your Twitter username in `portfolio.js` to show your recent activity on your page.
+
+```javascript
+const twitterDetails = {
+  userName : "Your Twitter Username"
+};
+```
+Note: Don't use `@` symbol when adding username.
+
+## Deployment
+When you are done with the setup, you should host your website online.
+We highly recommend to read through the [Deploying on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) docs for React.
+
+#### Configuring GitHub Actions (Recommended)
+First you should enable, GitHub Actions for the repository you use.
+
+The Profile and the Repository information from GitHub is only created at the time of deploy and the site needs to be redeployed if those information needs to be updated. So, a configurable [CRON Job](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events) is setup which deploys your site every week, so that once you update your profile on GitHub it is shown on your portfolio. You can also trigger it manually using `workflow_dispatch` event, see [this guide](https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch) on how to do that.
+
+- When you are done with the configuration, we highly recommend to read through the [GitHub Actions Configuring a workflow](https://docs.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) docs.
+
+#### Deploying to GitHub Pages
+
+This section guides you to deploy your portfolio on GitHub pages.
+
+- Navigate to `package.json` and enter your domain name instead of `https://developerfolio.js.org/` in `homepage` variable. For example, if you want your site to be `https://<your-username>.github.io/developerFolio`, add the same to the homepage section of `package.json`.
+
+- In short you can also add `/devloperFolio` to `package.json` as both are exactly same. Upon doing so, you tell `create-react-app` to add the path assets accordingly.
+
+- Optionally, configure the domain. You can configure a custom domain with GitHub Pages by adding a `CNAME` file to the `public/` folder.
+
+- Follow through the guide to setup GitHub pages from the official CRA docs [here](https://create-react-app.dev/docs/deployment/#github-pages).
+
+#### Deploying to Netlify
+
+You could also host directly with Netlify by linking your own repository.
+
+[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/saadpasta/developerFolio)
+
+For more information, read [hosting on Netlify](https://create-react-app.dev/docs/deployment/#netlify).
+
+
+## Technologies Used 
+
+- [React](https://reactjs.org/)
+- [graphql](https://graphql.org/)
+- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
+- [react-twitter-embed](https://github.com/saurabhnemade/react-twitter-embed)
+- [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
+- [react-headroom](https://github.com/KyleAMathews/react-headroom)
+- [color-thief](https://github.com/lokesh/color-thief)
+
+## Illustrations
+- [UnDraw](https://undraw.co/illustrations)
+- [Lottie by Oblikweare](https://lottiefiles.com/oblikweare)
+
+
+## For the Future
+If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
+
+- Connect with LinkedIn to get Summary, Skills, Education and Experience
+
+- Move to Gatsby
+
+- Add More Sections
+
+## Project Maintainers 
+
+<table>
+  <tr>
+    <td align="center"><a href="http://saadpasta.github.io"><img src="https://avatars2.githubusercontent.com/u/23307811?v=4" width="100px;" alt=""/><br /><sub><b>Saad Pasta</b></sub></a></td>
+    <td align="center"><a href="https://github.com/kartikcho"><img src="https://avatars1.githubusercontent.com/u/48270786?v=4" width="100px;" alt=""/><br /><sub><b>Kartik Choudhary</b></sub></a></td>
+    <td align="center"><a href="https://github.com/naveen521kk"><img src="https://avatars1.githubusercontent.com/u/49693820?v=4" width="100px;" alt=""/><br /><sub><b>Naveen M K</b></sub></a></td>
+    <td align="center"><a href="http://www.muhammadhasham.com"><img src="https://avatars0.githubusercontent.com/u/17927649?v=4" width="100px;" alt=""/><br /><sub><b>Muhammad Hasham</b></sub></a></td>
+  </tr>
+</table>
+
+## Contributors 
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://facebook.com/9inpachi"><img src="https://avatars2.githubusercontent.com/u/36920441?v=4?s=100" width="100px;" alt="Fawad Ali"/><br /><sub><b>Fawad Ali</b></sub></a><br /><a href="#ideas-9inpachi" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/saadpasta/developerFolio/commits?author=9inpachi" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://dasunnavoda.wordpress.com/"><img src="https://avatars0.githubusercontent.com/u/5556085?v=4?s=100" width="100px;" alt="Dasun Navoda"/><br /><sub><b>Dasun Navoda</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=IamDZN" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://brian.teeman.net"><img src="https://avatars3.githubusercontent.com/u/1296369?v=4?s=100" width="100px;" alt="Brian Teeman"/><br /><sub><b>Brian Teeman</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=brianteeman" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://rajkumaar.co.in"><img src="https://avatars1.githubusercontent.com/u/37476886?v=4?s=100" width="100px;" alt="Rajkumar S"/><br /><sub><b>Rajkumar S</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=rajkumaar23" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/viveksharmaui"><img src="https://avatars1.githubusercontent.com/u/28563357?v=4?s=100" width="100px;" alt="Slim Coder"/><br /><sub><b>Slim Coder</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=viveksharmaui" title="Code">💻</a> <a href="https://github.com/saadpasta/developerFolio/commits?author=viveksharmaui" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://msayyaf.com"><img src="https://avatars3.githubusercontent.com/u/22149734?v=4?s=100" width="100px;" alt="Mohamed Sayyaf"/><br /><sub><b>Mohamed Sayyaf</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=msayyaf1" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://ashutosh1919.github.io"><img src="https://avatars3.githubusercontent.com/u/20843596?v=4?s=100" width="100px;" alt="Ashutosh Hathidara"/><br /><sub><b>Ashutosh Hathidara</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=ashutosh1919" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.upwork.com/freelancers/~01d10c23d4ffe3c658"><img src="https://avatars0.githubusercontent.com/u/8683960?v=4?s=100" width="100px;" alt="Rizwan Jamal ⚡️"/><br /><sub><b>Rizwan Jamal ⚡️</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Rizwanjamal" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.muhammadhasham.com"><img src="https://avatars0.githubusercontent.com/u/17927649?v=4?s=100" width="100px;" alt="Muhammad Hasham"/><br /><sub><b>Muhammad Hasham</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=MohammadHasham" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://sourcerer.io/joshiujjawal22"><img src="https://avatars3.githubusercontent.com/u/44023234?v=4?s=100" width="100px;" alt="UJJAWAL JOSHI"/><br /><sub><b>UJJAWAL JOSHI</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=joshiujjawal22" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/palak-sethi"><img src="https://avatars2.githubusercontent.com/u/51605219?v=4?s=100" width="100px;" alt="Palak Sethi"/><br /><sub><b>Palak Sethi</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=palak-sethi" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://viniciusbds.github.io/"><img src="https://avatars3.githubusercontent.com/u/34755896?v=4?s=100" width="100px;" alt="Vinicius Barbosa"/><br /><sub><b>Vinicius Barbosa</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=viniciusbds" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://bharatkammakatla.github.io"><img src="https://avatars1.githubusercontent.com/u/28840761?v=4?s=100" width="100px;" alt="Bharat Kammakatla"/><br /><sub><b>Bharat Kammakatla</b></sub></a><br /><a href="#design-BharatKammakatla" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://bit.ly/garimasingh"><img src="https://avatars2.githubusercontent.com/u/44302373?v=4?s=100" width="100px;" alt="Garima Singh"/><br /><sub><b>Garima Singh</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=garimasingh128" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/HenryHengZJ"><img src="https://avatars2.githubusercontent.com/u/26460777?v=4?s=100" width="100px;" alt="Henry Heng"/><br /><sub><b>Henry Heng</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=HenryHengZJ" title="Code">💻</a> <a href="#design-HenryHengZJ" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/PulkitBanta"><img src="https://avatars2.githubusercontent.com/u/43134750?v=4?s=100" width="100px;" alt="Pulkit Banta"/><br /><sub><b>Pulkit Banta</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=PulkitBanta" title="Code">💻</a> <a href="https://github.com/saadpasta/developerFolio/issues?q=author%3APulkitBanta" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/AkshayCHD"><img src="https://avatars1.githubusercontent.com/u/25455546?v=4?s=100" width="100px;" alt="Akshay Kumar"/><br /><sub><b>Akshay Kumar</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=AkshayCHD" title="Code">💻</a> <a href="https://github.com/saadpasta/developerFolio/issues?q=author%3AAkshayCHD" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/AmnaEjaz"><img src="https://avatars3.githubusercontent.com/u/14257959?v=4?s=100" width="100px;" alt="Amna Ejaz"/><br /><sub><b>Amna Ejaz</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=AmnaEjaz" title="Code">💻</a> <a href="#ideas-AmnaEjaz" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/parasnagpal"><img src="https://avatars0.githubusercontent.com/u/39419139?v=4?s=100" width="100px;" alt="Paras Nagpal"/><br /><sub><b>Paras Nagpal</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=parasnagpal" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://sourcerer.io/sparsh-99"><img src="https://avatars0.githubusercontent.com/u/56729873?v=4?s=100" width="100px;" alt="Sparsh Garg"/><br /><sub><b>Sparsh Garg</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=sparsh-99" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://aashutosh.dev"><img src="https://avatars2.githubusercontent.com/u/21199234?v=4?s=100" width="100px;" alt="Aashutosh Rathi"/><br /><sub><b>Aashutosh Rathi</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=aashutoshrathi" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://abhishekashyap.studio/"><img src="https://avatars3.githubusercontent.com/u/29458374?v=4?s=100" width="100px;" alt="Abhishek Kashyap"/><br /><sub><b>Abhishek Kashyap</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3Aabhishekashyap" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/lcsvcn"><img src="https://avatars1.githubusercontent.com/u/6011385?v=4?s=100" width="100px;" alt="Lucas V C Nicolau"/><br /><sub><b>Lucas V C Nicolau</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=lcsvcn" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://bradleycherrin.com"><img src="https://avatars0.githubusercontent.com/u/5648785?v=4?s=100" width="100px;" alt="Bradley C. Herrin"/><br /><sub><b>Bradley C. Herrin</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=bradleycherrin" title="Documentation">📖</a> <a href="#ideas-bradleycherrin" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.zekinahlecaros.com"><img src="https://avatars0.githubusercontent.com/u/43392346?v=4?s=100" width="100px;" alt="Zekinah Lecaros"/><br /><sub><b>Zekinah Lecaros</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=zekinah" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vandana1499"><img src="https://avatars2.githubusercontent.com/u/29394600?v=4?s=100" width="100px;" alt="unbeat"/><br /><sub><b>unbeat</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=vandana1499" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/lARSHADl"><img src="https://avatars3.githubusercontent.com/u/45604332?v=4?s=100" width="100px;" alt="Arshad Ahmed"/><br /><sub><b>Arshad Ahmed</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=lARSHADl" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://xiaohuiliu.me"><img src="https://avatars1.githubusercontent.com/u/33507446?v=4?s=100" width="100px;" alt="Xiaohui Liu"/><br /><sub><b>Xiaohui Liu</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Ergouzii" title="Documentation">📖</a> <a href="https://github.com/saadpasta/developerFolio/commits?author=Ergouzii" title="Code">💻</a> <a href="#design-Ergouzii" title="Design">🎨</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://seungyeon-lee.github.io/"><img src="https://avatars1.githubusercontent.com/u/26589915?v=4?s=100" width="100px;" alt="Seungyeon-Lee"/><br /><sub><b>Seungyeon-Lee</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Seungyeon-Lee" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/NajamShehzad"><img src="https://avatars2.githubusercontent.com/u/37629243?v=4?s=100" width="100px;" alt="Najam Shehzad "/><br /><sub><b>Najam Shehzad </b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=NajamShehzad" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.exspiravit.ga/"><img src="https://avatars1.githubusercontent.com/u/22334680?v=4?s=100" width="100px;" alt="Randy Jesus Real Srsen"/><br /><sub><b>Randy Jesus Real Srsen</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Exspiravit" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://tamojitdas.netlify.app"><img src="https://avatars0.githubusercontent.com/u/40804626?v=4?s=100" width="100px;" alt="Tamojit Das"/><br /><sub><b>Tamojit Das</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=tamojit-123" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://warengonzaga.com"><img src="https://avatars1.githubusercontent.com/u/15052701?v=4?s=100" width="100px;" alt="Waren Gonzaga"/><br /><sub><b>Waren Gonzaga</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=WarenGonzaga" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.benjaminbourgeois.com"><img src="https://avatars3.githubusercontent.com/u/20949060?v=4?s=100" width="100px;" alt="Benjamin Bourgeois"/><br /><sub><b>Benjamin Bourgeois</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=BourgeoisBenjamin" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/keshavjain235"><img src="https://avatars2.githubusercontent.com/u/52530690?v=4?s=100" width="100px;" alt="Keshav Jain"/><br /><sub><b>Keshav Jain</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=keshavjain235" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://hanzla.ga"><img src="https://avatars.githubusercontent.com/u/59178380?v=4?s=100" width="100px;" alt="Hanzla"/><br /><sub><b>Hanzla</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=1hanzla100" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/yogeshhrathod"><img src="https://avatars.githubusercontent.com/u/46518134?v=4?s=100" width="100px;" alt="Yogesh Rathod"/><br /><sub><b>Yogesh Rathod</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=yogeshhrathod" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/AlKun25"><img src="https://avatars.githubusercontent.com/u/53429438?v=4?s=100" width="100px;" alt="Kunal Mundada"/><br /><sub><b>Kunal Mundada</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=AlKun25" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jayhawk24"><img src="https://avatars.githubusercontent.com/u/38766415?v=4?s=100" width="100px;" alt="Anubhav Gupta"/><br /><sub><b>Anubhav Gupta</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=jayhawk24" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://vatsaldavevdwpblog.wordpress.com/"><img src="https://avatars.githubusercontent.com/u/42956495?v=4?s=100" width="100px;" alt="Vatsal Dave"/><br /><sub><b>Vatsal Dave</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=vatsaldaveVD" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.elvisciuffetelli.com"><img src="https://avatars.githubusercontent.com/u/35818757?v=4?s=100" width="100px;" alt="Elvis Ciuffetelli"/><br /><sub><b>Elvis Ciuffetelli</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=elvisciuffetelli" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ScottJellen.com"><img src="https://avatars.githubusercontent.com/u/51421669?v=4?s=100" width="100px;" alt="Scott Jellen"/><br /><sub><b>Scott Jellen</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=SJellen" title="Code">💻</a> <a href="#design-SJellen" title="Design">🎨</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/karthik-mohan-/"><img src="https://avatars.githubusercontent.com/u/25052382?v=4?s=100" width="100px;" alt="Karthik Mohan"/><br /><sub><b>Karthik Mohan</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3Akarthikmohan" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mhowell11"><img src="https://avatars.githubusercontent.com/u/62813469?v=4?s=100" width="100px;" alt="mhowell11"/><br /><sub><b>mhowell11</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=mhowell11" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/gajanandh"><img src="https://avatars.githubusercontent.com/u/80502737?v=4?s=100" width="100px;" alt="gajanandh"/><br /><sub><b>gajanandh</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3Agajanandh" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/JooHyukKim"><img src="https://avatars.githubusercontent.com/u/61615301?v=4?s=100" width="100px;" alt="JooHyukKim"/><br /><sub><b>JooHyukKim</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=JooHyukKim" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://redheadphone.github.io/"><img src="https://avatars.githubusercontent.com/u/55500003?v=4?s=100" width="100px;" alt="Red Headphone"/><br /><sub><b>Red Headphone</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=RedHeadphone" title="Code">💻</a> <a href="https://github.com/saadpasta/developerFolio/issues?q=author%3ARedHeadphone" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://sunitroy2703.github.io"><img src="https://avatars.githubusercontent.com/u/67560900?v=4?s=100" width="100px;" alt="Sunit Roy"/><br /><sub><b>Sunit Roy</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3ASunitRoy2703" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/nayabatir1"><img src="https://avatars.githubusercontent.com/u/91016903?v=4?s=100" width="100px;" alt="Atir Nayab"/><br /><sub><b>Atir Nayab</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3Anayabatir1" title="Bug reports">🐛</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://thatdevsherry.pk"><img src="https://avatars.githubusercontent.com/u/40890226?v=4?s=100" width="100px;" alt="Shehriyar Qureshi"/><br /><sub><b>Shehriyar Qureshi</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=thatdevsherry" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Rispectech"><img src="https://avatars.githubusercontent.com/u/90450963?v=4?s=100" width="100px;" alt="respectech"/><br /><sub><b>respectech</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Rispectech" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://braydentw.com"><img src="https://avatars.githubusercontent.com/u/47185402?v=4?s=100" width="100px;" alt="Brayden"/><br /><sub><b>Brayden</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3ABraydenTW" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/CanciuCostin"><img src="https://avatars.githubusercontent.com/u/27332434?v=4?s=100" width="100px;" alt="Canciu Costin"/><br /><sub><b>Canciu Costin</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=CanciuCostin" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/SpectralGT"><img src="https://avatars.githubusercontent.com/u/78777556?v=4?s=100" width="100px;" alt="Atharv Singh"/><br /><sub><b>Atharv Singh</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=SpectralGT" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://allishaan.co"><img src="https://avatars.githubusercontent.com/u/59707330?v=4?s=100" width="100px;" alt="Ishan Khandelwal"/><br /><sub><b>Ishan Khandelwal</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Ishan-001" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://slyapustin.com"><img src="https://avatars.githubusercontent.com/u/370774?v=4?s=100" width="100px;" alt="Sergey Lyapustin"/><br /><sub><b>Sergey Lyapustin</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=slyapustin" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.cam1pozas.xyz/"><img src="https://avatars.githubusercontent.com/u/89259499?v=4?s=100" width="100px;" alt="Camila Pozas"/><br /><sub><b>Camila Pozas</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=camipozas" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://saiteja13427.github.io"><img src="https://avatars.githubusercontent.com/u/40917760?v=4?s=100" width="100px;" alt="Sai Teja"/><br /><sub><b>Sai Teja</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/issues?q=author%3Asaiteja13427" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Vinitvh"><img src="https://avatars.githubusercontent.com/u/42197888?v=4?s=100" width="100px;" alt="Vinit Hemadri "/><br /><sub><b>Vinit Hemadri </b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Vinitvh" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Njong392"><img src="https://avatars.githubusercontent.com/u/81039882?v=4?s=100" width="100px;" alt="Njong Emy"/><br /><sub><b>Njong Emy</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Njong392" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://tamal.vercel.app/"><img src="https://avatars.githubusercontent.com/u/72851613?v=4?s=100" width="100px;" alt="Tamal Das "/><br /><sub><b>Tamal Das </b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=IAmTamal" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://dunsin.vercel.app"><img src="https://avatars.githubusercontent.com/u/78784850?v=4?s=100" width="100px;" alt="Dunsin"/><br /><sub><b>Dunsin</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=Dun-sin" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/muneebahmedayub"><img src="https://avatars.githubusercontent.com/u/65030135?v=4?s=100" width="100px;" alt="Muneeb Ahmed"/><br /><sub><b>Muneeb Ahmed</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=muneebahmedayub" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/qais-attarwala/"><img src="https://avatars.githubusercontent.com/u/52388168?v=4?s=100" width="100px;" alt="Qais Attarwala"/><br /><sub><b>Qais Attarwala</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=KazAttarwala" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
-
-<br/>
-
-## Step 2 - Homepage
-
-Go to `/index.html` and fill your information, there are 6 sections:
-
-### Header of Homepage
-
-- On `.header__logo-img`, Add your own Image, Better if the background of the image is transparent so the background can match the theme color. To remove the background of your image, you can visit remove.bg where you can upload your image and it will remove the background of it.
-- On `.header__logo-sub`, Add your own Name.
-
-```html
-<!-- **** Header of Homepage **** -->
-<header class="header">
-  <div class="header__content">
-    <div class="header__logo-container">
-      <div class="header__logo-img-cont">
-        <img
-          src="./assets/png/john-doe.png"
-          alt="Ram Maheshwari Logo Image"
-          class="header__logo-img"
-        />
-      </div>
-      <span class="header__logo-sub">John Doe</span>
-    </div>
-    <div class="header__main">
-      <ul class="header__links">
-        <li class="header__link-wrapper">
-          <a href="./" class="header__link"> Home </a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="./#about" class="header__link">About </a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="./#projects" class="header__link"> Projects </a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="./#contact" class="header__link"> Contact </a>
-        </li>
-      </ul>
-      <div class="header__main-ham-menu-cont">
-        <img
-          src="./assets/svg/ham-menu.svg"
-          alt="hamburger menu"
-          class="header__main-ham-menu"
-        />
-      </div>
-    </div>
-  </div>
-  <div class="header__sm-menu">
-    <div class="header__sm-menu-content">
-      <ul class="header__sm-menu-links">
-        <li class="header__sm-menu-link">
-          <a href="./"> Home </a>
-        </li>
-
-        <li class="header__sm-menu-link">
-          <a href="./#about"> About </a>
-        </li>
-
-        <li class="header__sm-menu-link">
-          <a href="./#projects"> Projects </a>
-        </li>
-
-        <li class="header__sm-menu-link">
-          <a href="./#contact"> Contact </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
-<!-- END Header -->
-```
-
-### Hero Section of Homepage
-
-- On `.heading-primary`, put your custom title.
-- On `.text-primary`, put a short description about yourself.
-- On `.home-hero__social-icon-link`, fill the href attribute with a link related to your social media account.
-
-```html
-<!-- **** Hero Section of Homepage **** -->
-<section class="home-hero">
-  <div class="home-hero__content">
-    <h1 class="heading-primary">Hey, My name is John Doe</h1>
-    <div class="home-hero__info">
-      <p class="text-primary">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-        tempora explicabo quae quod deserunt eius sapiente solutions for complex
-        problems
-      </p>
-    </div>
-    <div class="home-hero__cta">
-      <a href="./#projects" class="btn btn--bg">Projects</a>
-    </div>
-  </div>
-  <div class="home-hero__socials">
-    <div class="home-hero__social">
-      <a href="#" class="home-hero__social-icon-link">
-        <img
-          src="./assets/png/linkedin-ico.png"
-          alt="icon"
-          class="home-hero__social-icon"
-        />
-      </a>
-    </div>
-    <div class="home-hero__social">
-      <a href="#" class="home-hero__social-icon-link">
-        <img
-          src="./assets/png/github-ico.png"
-          alt="icon"
-          class="home-hero__social-icon"
-        />
-      </a>
-    </div>
-    <div class="home-hero__social">
-      <a href="#" class="home-hero__social-icon-link">
-        <img
-          src="./assets/png/twitter-ico.png"
-          alt="icon"
-          class="home-hero__social-icon"
-        />
-      </a>
-    </div>
-    <div class="home-hero__social">
-      <a href="#" class="home-hero__social-icon-link">
-        <img
-          src="./assets/png/yt-ico.png"
-          alt="icon"
-          class="home-hero__social-icon"
-        />
-      </a>
-    </div>
-    <div class="home-hero__social">
-      <a
-        href="#"
-        class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-      >
-        <img
-          src="./assets/png/insta-ico.png"
-          alt="icon"
-          class="home-hero__social-icon"
-        />
-      </a>
-    </div>
-  </div>
-  <div class="home-hero__mouse-scroll-cont">
-    <div class="mouse"></div>
-  </div>
-</section>
-<!-- /END Hero Section -->
-```
-
-### About Section
-
-- On `.heading-sec__sub`, put a short description about the section.
-- On `.about__content-details-para`, put your details here and use `<strong></strong>` tag to highlight specific keywords.
-- On `.skills__skill`, mention your skill one by one.
-
-```html
-<!-- **** About Section of Homepage **** -->
-<section id="about" class="about sec-pad">
-  <div class="main-container">
-    <h2 class="heading heading-sec heading-sec__mb-med">
-      <span class="heading-sec__main">About Me</span>
-      <span class="heading-sec__sub">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-        tempora explicabo quae quod deserunt eius sapiente
-      </span>
-    </h2>
-    <div class="about__content">
-      <div class="about__content-main">
-        <h3 class="about__content-title">Get to know me!</h3>
-        <div class="about__content-details">
-          <p class="about__content-details-para">
-            Hey! It's
-            <strong>John Doe</strong>
-            and I'm a <strong> Frontend Web Developer </strong> located in Los
-            Angeles. I've done
-            <strong> remote </strong>
-            projects for agencies, consulted for startups, and collaborated with
-            talented people to create
-            <strong>digital products </strong>
-            for both business and consumer use.
-          </p>
-          <p class="about__content-details-para">
-            I'm a bit of a digital product junky. Over the years, I've used
-            hundreds of web and mobile apps in different industries and
-            verticals. Feel free to
-            <strong>contact</strong> me here.
-          </p>
-        </div>
-        <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-          >Contact</a
-        >
-      </div>
-      <div class="about__content-skills">
-        <h3 class="about__content-title">My Skills</h3>
-        <div class="skills">
-          <div class="skills__skill">HTML</div>
-          <div class="skills__skill">CSS</div>
-          <div class="skills__skill">JavaScript</div>
-          <div class="skills__skill">React</div>
-          <div class="skills__skill">SASS</div>
-          <div class="skills__skill">GIT</div>
-          <div class="skills__skill">Shopify</div>
-          <div class="skills__skill">Wordpress</div>
-          <div class="skills__skill">Google ADS</div>
-          <div class="skills__skill">Facebook Ads</div>
-          <div class="skills__skill">Android</div>
-          <div class="skills__skill">IOS</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- END About Section -->
-```
-
-### Projects
-
-- On `.heading-sec__sub`, put a short description about the section.
-- `.projects__row` is the row for each project in your portfolio.
-- One `.projects__row` for each project in your portfolio ( so for example, if you have 3 projects then you need 3 `.projects__row` one by one).
-
-- Inside each `projects__row`, there are 4 main elements.
-
-  - Project Image is located at `.projects__row-img` where you can add the URL for your project mockup/image. You can use websites like [Media Modifier](https://mediamodifier.com/) and [SmartMockups](https://smartmockups.com) to generate mockups for free. Just make sure to crop the extra white space around your mockup so the mockups can look bigger and the size of the mockup file will be less.
-
-  - `.projects__row-content-title` is where you need to add your Project title.
-  - `.projects__row-content-desc` is where you need to add a short 2-3 lines description of your project. As there's going to be a separate page for each project so there you can add all the details for each project on the specific project page.
-  - The Anchor tag ( **Case Study** button) on press will take you to the details page for each project ( For example: If you click the **Case Study** button of Project 1 then it will take you to the `project-1.html` file where you will have all the details about that particular project).
-
-Currently, I have already added a separate for each project ( considering there are 3 projects ) the file names are `project-1.html`, `project-2.html`, and `project-3.html`. They all contain the same code only the project title, description and image will change. If you like to add more projects then you can just create a new file for it and paste the same code that we have in `project-1.html` as the code is going to be the same and the only thing that you need to change is the data inside each project.
-
-```html
-<!-- **** Projects Section of Homepage **** -->
-<section id="projects" class="projects sec-pad">
-  <div class="main-container">
-    <h2 class="heading heading-sec heading-sec__mb-bg">
-      <span class="heading-sec__main">Projects</span>
-      <span class="heading-sec__sub">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-        tempora explicabo quae quod deserunt eius sapiente
-      </span>
-    </h2>
-
-    <div class="projects__content">
-      <div class="projects__row">
-        <div class="projects__row-img-cont">
-          <img
-            src="./assets/jpeg/project-mockup-example.jpeg"
-            alt="Software Screenshot"
-            class="projects__row-img"
-            loading="lazy"
-          />
-        </div>
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Project 1</h3>
-          <p class="projects__row-content-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora, explicabo quae quod deserunt eius sapiente praesentium.
-          </p>
-          <a
-            href="./project-1.html"
-            class="btn btn--med btn--theme dynamicBgClr"
-            target="_blank"
-            >Case Study</a
-          >
-        </div>
-      </div>
-      <div class="projects__row">
-        <div class="projects__row-img-cont">
-          <img
-            src="./assets/jpeg/project-mockup-example.jpeg"
-            alt="Software Screenshot"
-            class="projects__row-img"
-            loading="lazy"
-          />
-        </div>
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Project 2</h3>
-          <p class="projects__row-content-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora, explicabo quae quod deserunt eius sapiente praesentium.
-          </p>
-          <a
-            href="./project-2.html"
-            class="btn btn--med btn--theme dynamicBgClr"
-            target="_blank"
-            >Case Study</a
-          >
-        </div>
-      </div>
-      <div class="projects__row">
-        <div class="projects__row-img-cont">
-          <img
-            src="./assets/jpeg/project-mockup-example.jpeg"
-            alt="Software Screenshot"
-            class="projects__row-img"
-            loading="lazy"
-          />
-        </div>
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Project 3</h3>
-          <p class="projects__row-content-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora, explicabo quae quod deserunt eius sapiente praesentium.
-          </p>
-          <a
-            href="./project-3.html"
-            class="btn btn--med btn--theme dynamicBgClr"
-            target="_blank"
-            >Case Study</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- END Projects Section -->
-```
-
-### Contact Section
-
-- On `.heading-sec__sub`, put a short description about the section.
-- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your need but just make sure to change the name of **label** and **input/textarea** inside it.
-
-If you like to know how to submit forms so you can receive the form details in your email then highly recommend using **formspree.io** as it's easier to set up and free to use. If you are using **Netlify** to host the site then Netlify has an inbuilt form receiver which you can use instead of **formspree**.
-
-```html
-<!-- **** Contact Section of Homepage **** -->
-<section id="contact" class="contact sec-pad dynamicBg">
-  <div class="main-container">
-    <h2 class="heading heading-sec heading-sec__mb-med">
-      <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-      <span class="heading-sec__sub heading-sec__sub--lt">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-        tempora explicabo quae quod deserunt eius sapiente
-      </span>
-    </h2>
-    <div class="contact__form-container">
-      <form action="#" class="contact__form">
-        <div class="contact__form-field">
-          <label class="contact__form-label" for="name">Name</label>
-          <input
-            required
-            placeholder="Enter Your Name"
-            type="text"
-            class="contact__form-input"
-            name="name"
-            id="name"
-          />
-        </div>
-        <div class="contact__form-field">
-          <label class="contact__form-label" for="email">Email</label>
-          <input
-            required
-            placeholder="Enter Your Email"
-            type="text"
-            class="contact__form-input"
-            name="email"
-            id="email"
-          />
-        </div>
-        <div class="contact__form-field">
-          <label class="contact__form-label" for="message">Message</label>
-          <textarea
-            required
-            cols="30"
-            rows="10"
-            class="contact__form-input"
-            placeholder="Enter Your Message"
-            name="message"
-            id="message"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn--theme contact__btn">
-          Submit
-        </button>
-      </form>
-    </div>
-  </div>
-</section>
-<!-- END Contact Section -->
-```
-
-
-
-### Footer Section
-
-- Inside h4 tag with the class `heading heading-sm text-lt` add your name.
-- On `.main-footer__short-desc` put a short description about yourself.
-- On Anchor tag inside `.main-footer__social-cont`, fill the href attribute with a link related to your social media account.
-
-```html
-<!-- **** Footer Section **** -->
-<footer class="main-footer">
-  <div class="main-container">
-    <div class="main-footer__upper">
-      <div class="main-footer__row main-footer__row-1">
-        <h2 class="heading heading-sm main-footer__heading-sm">
-          <span>Social</span>
-        </h2>
-        <div class="main-footer__social-cont">
-          <a target="_blank" rel="noreferrer" href="#">
-            <img
-              class="main-footer__icon"
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="#">
-            <img
-              class="main-footer__icon"
-              src="./assets/png/github-ico.png"
-              alt="icon"
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="#">
-            <img
-              class="main-footer__icon"
-              src="./assets/png/twitter-ico.png"
-              alt="icon"
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="#">
-            <img
-              class="main-footer__icon"
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="#">
-            <img
-              class="main-footer__icon main-footer__icon--mr-none"
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="main-footer__row main-footer__row-2">
-        <h4 class="heading heading-sm text-lt">John Doe</h4>
-        <p class="main-footer__short-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-          tempora explicabo quae quod deserunt
-        </p>
-      </div>
-    </div>
-
-    <div class="main-footer__lower">
-      &copy; Copyright 2021. Made by
-      <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-        >Ram Maheshwari</a
-      >
-    </div>
-  </div>
-</footer>
-<!-- END Footer Section -->
-```
-
-<br/>
-
----
-
-<br/>
-
-## Step 3 - Project Page
-
-Each project will have its own Page. The project page will have important details about the project like the Project Title, Description, Technologies, Project Links, etc.
-
-### Project Hero Section
-
-- On `.heading-primary` add the Project Title.
-- On `.text-primary` add a short description about the Project.
-- On Anchor Tag that says **Live Link** with class `btn btn--bg`, add the Project Live Link as the value for the href attribute.
-
-<!-- **** Project Section **** -->
-
-```html
-<section class="project-cs-hero">
-  <div class="project-cs-hero__content">
-    <h1 class="heading-primary">Project 1</h1>
-    <div class="project-cs-hero__info">
-      <p class="text-primary">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in
-        numquam incidunt earum quaerat cum fuga, atque similique natus nobis
-        sit.
-      </p>
-    </div>
-    <div class="project-cs-hero__cta">
-      <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
-    </div>
-  </div>
-</section>
-```
-
-<!-- **** END Project Hero Section **** -->
-
-### Project Details Section
-
-- On `.project-details__showcase-img`, change the value of **src** to the location/link of Project Mockup.
-- On `.project-details__desc-para` to add a detailed paragraph describing your project. Use multiple `.project-details__desc-para` elements for multiple paragraphs.
-- On `.skills` mention the skills that were used to build the project inside `.skills__skill` to mention each skill.
-- On Anchor Tag that says **Live Link** with class `btn btn--med btn--theme project-details__links-btn`, add the Project Live Link as the value for the href attribute.
-- On Anchor Tag that says **Code Link** with class `btn btn--med btn--theme-inv project-details__links-btn`, add the Project's Code Link ( Repository Link ) as the value for the href attribute.
-
-<!-- **** Project Details Section **** -->
-
-```html
-<section class="project-details">
-  <div class="main-container">
-    <div class="project-details__content">
-      <div class="project-details__showcase-img-cont">
-        <img
-          src="./assets/jpeg/project-mockup-example.jpeg"
-          alt="Project Image"
-          class="project-details__showcase-img"
-        />
-      </div>
-      <div class="project-details__content-main">
-        <div class="project-details__desc">
-          <h3 class="project-details__content-title">Project Overview</h3>
-          <p class="project-details__desc-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
-            tenetur minus quaerat aliquid, aut provident blanditiis, deleniti
-            aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia
-            laborum corrupti ullam rem. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Neque alias tenetur minus quaerat aliquid, aut
-            provident blanditiis, deleniti aspernatur ipsam eaque veniam
-            voluptatem corporis vitae mollitia laborum corrupti ullam rem?
-          </p>
-          <p class="project-details__desc-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
-            tenetur minus quaerat aliquid, aut provident blanditiis, deleniti
-            aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia
-            laborum corrupti ullam rem?
-          </p>
-        </div>
-        <div class="project-details__tools-used">
-          <h3 class="project-details__content-title">Tools Used</h3>
-          <div class="skills">
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">React</div>
-            <div class="skills__skill">SASS</div>
-            <div class="skills__skill">GIT</div>
-            <div class="skills__skill">Shopify</div>
-            <div class="skills__skill">Wordpress</div>
-            <div class="skills__skill">Google ADS</div>
-            <div class="skills__skill">Facebook Ads</div>
-            <div class="skills__skill">Android</div>
-            <div class="skills__skill">IOS</div>
-          </div>
-        </div>
-        <div class="project-details__links">
-          <h3 class="project-details__content-title">See Live</h3>
-          <a
-            href="#"
-            class="btn btn--med btn--theme project-details__links-btn"
-            target="_blank"
-            >Live Link</a
-          >
-          <a
-            href="#"
-            class="btn btn--med btn--theme-inv project-details__links-btn"
-            target="_blank"
-            >Code Link</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-```
-
-<!-- **** END Project Details Section **** -->
-
-<br>
-
----
-
-<br>
-
-
-## Deployment 📦
-
-Once you have done with your setup. You need to put your website online!
-
-I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
-
-Whenever you wanna host a new site on Netlify. You will need to press the **Create New Site** button from the Netlify's dashboard once you login into Netlify.
-
-Once you press the **Create Site Button** then you will have to follow the 3 steps:
-
-1. You will have to select your Github account.
-
-2. Then select the Repository which you wanna host, in this case its your Portfolio website ( Clone of Dopefolio )
-
-3. In the 3rd step, you will have to modify the **Site settings and deploy**, keep everything as it is but just make sure to modify the **Build command** and set its value to **npm run build** and then modify the **Publish directory** and set its value to **/** as shown in the  **image** below
-
-<div align="center">
-  <img src="https://i.ibb.co/hDTTrPB/Set-Build-Command-to.png" alt="Dopefolio Build Command Example and Publish Directory Value" width="100%" />
-  <br>
-</div>
-
-<br>
-
-Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
-
-<br>
-
----
-
-<br>
-
-## Give a Star ⭐
-
-If you like this project then give it a **Github** star by pressing the **Star** button ⭐
-
-<br>
-
----
-
-<br>
-
-## Author 👨‍💻
-
-- **Ram Maheshwari** - **[Linkedin](https://linkedin.com/in/rammcodes)**, **[Instagram](https://instagram.com/rammcodes_)**, **[Twitter](https://twitter.com/rammcodes)**, **[Github](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
-
-<br>
-
-#### Note: 
-I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )** and **On-Site ( Anywhere in India )**. So, if you have a good opportunity that matches my skills experience then you can contact me on my **[Linkedin](https://linkedin.com/in/rammcodes)** or my email id **rammcodes@gmail.com** 🙌
-
-
-<br>
-
----
-
-<br>
-
-## Special Thanks ❤️
-
-Special thanks to [Jacobo Martínez](https://github.com/cobidev) for inspiring me to create something useful for the Developer Community. **Jacobo** is the creator of [Simplefolio](https://github.com/cobidev/simplefolio) which is another great Portfolio website Template for Developers. Check it out and show him some love ❤️
-
-<br>
-
----
-
-<br>
-
-## License 📄
-
-This project is licensed under the  **GPL-3.0** License - see the [LICENSE](LICENSE) file for details
-
