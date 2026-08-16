@@ -18,9 +18,10 @@ html {
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #13213d 0%, $bg 42%);
+  background: radial-gradient(circle at top, rgba(28, 46, 75, 0.92), $bg 38%);
   color: $text;
-  line-height: 1.6;
+  line-height: 1.7;
+  text-align: left;
 }
 
 a {
@@ -42,8 +43,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(13, 19, 33, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(13, 19, 33, 0.72);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid $border;
 }
 
@@ -83,9 +84,9 @@ img {
 
 .hero__content {
   display: grid;
-  grid-template-columns: 1.4fr 0.8fr;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.75fr);
   align-items: center;
-  gap: 2rem;
+  gap: clamp(2rem, 4vw, 4rem);
 }
 
 .eyebrow {
@@ -99,20 +100,22 @@ img {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.8rem, 5vw, 5rem);
-  line-height: 1.05;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
 }
 
 .lead {
-  max-width: 660px;
+  max-width: 620px;
   margin-top: 1rem;
-  font-size: 1.12rem;
+  font-size: 1.08rem;
   color: $text-soft;
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -122,15 +125,17 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 0.85rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   border-radius: 12px;
   font-weight: 700;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 22px rgba(15, 20, 30, 0.18);
 }
 
 .button:hover,
 .button:focus-visible {
   transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(15, 20, 30, 0.2);
 }
 
 .button--primary {
@@ -146,7 +151,7 @@ img {
 
 .hero__panel {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .panel-card {
@@ -190,7 +195,7 @@ img {
 
 .section-heading {
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .section-heading--left {
@@ -200,6 +205,7 @@ img {
 .section-heading h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.05em;
 }
 
 .skills-grid {
@@ -213,9 +219,15 @@ img {
   border: 1px solid $border;
   border-radius: 14px;
   padding: 1.2rem 1rem;
-  text-align: center;
+  text-align: left;
   color: $text-soft;
   font-weight: 600;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.skill-card:hover {
+  border-color: rgba(126, 230, 182, 0.5);
+  transform: translateY(-2px);
 }
 
 .timeline {
@@ -231,16 +243,19 @@ img {
   background: rgba(17, 27, 45, 0.8);
   border: 1px solid $border;
   border-radius: 18px;
-  padding: 1.4rem;
+  padding: 1.5rem 1.4rem;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
 }
 
 .timeline-year {
   color: $accent;
   font-weight: 800;
+  font-size: 1rem;
 }
 
 .timeline-item h3 {
   margin: 0 0 0.5rem;
+  font-size: 1.3rem;
 }
 
 .timeline-item p {
@@ -250,7 +265,7 @@ img {
 
 .contact__wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
   gap: 2rem;
 }
@@ -260,7 +275,7 @@ img {
   border: 1px solid $border;
   border-radius: 18px;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-card p {
